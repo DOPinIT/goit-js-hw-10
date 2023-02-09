@@ -1,5 +1,7 @@
-export function fetchCountries(name) {
-    fetch(`https://restcountries.com/v2/name/${name}`).then(response => {
-        return response.json();
-    })
-}
+export function fetchCountries(e) {
+  return  fetch(`https://restcountries.com/v3.1/name/${e}`).then((response) =>
+       response.json()
+    );
+};
+
+
